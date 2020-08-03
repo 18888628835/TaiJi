@@ -49,6 +49,7 @@ window.onload = function () {
     /*好哒 oo^_^oo */
     .div{
         animation:rotate 30s infinite linear;
+        transform:perspective(1000);
     }
     @keyframes rotate
 {
