@@ -55,7 +55,8 @@ window.onload = function () {
 {
     100%{transform: rotate(3600deg);}
 }
-@-webkit-keyframes rotate{
+@-webkit-keyframes rotate
+{
     100%{-webkit-transform: rotate(3600deg);}    
 } 
 /*做完啦*/
