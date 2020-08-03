@@ -49,12 +49,15 @@ window.onload = function () {
     /*好哒 oo^_^oo */
     .div{
         animation:rotate 30s infinite linear;
-        transform:perspective(1000);
+        -webkit-animation:rotate 30s infinite linear; 
     }
     @keyframes rotate
 {
     100%{transform: rotate(3600deg);}
 }
+@-webkit-keyframes rotate{
+    100%{-webkit-transform: rotate(3600deg);}    
+} 
 /*做完啦*/
     `
 
