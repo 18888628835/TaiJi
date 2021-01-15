@@ -1,9 +1,9 @@
 window.onload = function () {
-    let html = document.querySelector('.html')
-    let n = 0
-    let str2 = ''
-    let style = document.querySelector('#style')
-    let str = `/*你好
+  let html = document.querySelector(".html");
+  let n = 0;
+  let str2 = "";
+  let style = document.querySelector("#style");
+  let str = `/*你好
     我是邱彦兮，我现在要为你画一个八卦图
     首先我要画一个圆*/
     .div{
@@ -60,26 +60,26 @@ window.onload = function () {
     100%{-webkit-transform: rotate(3600deg);}    
 } 
 /*做完啦*/
-    `
+    `;
 
-    function write() {
-        if (str[n] === '\n') {
-            str2 += '</br>'
-        } else {
-            str2 += str[n]
-        }
-        html.innerHTML = str2
-        style.innerHTML = str.substring(0, n)
-        window.scroll(0, 99999)
-        html.scroll(0, 99999)
-        if (n >= str.length - 1) {
-            return
-        } else {
-            setTimeout(() => {
-                write()
-            }, 20)
-        }
-        n++
+  function write() {
+    if (str[n] === "\n") {
+      str2 += "</br>";
+    } else {
+      str2 += str[n];
     }
-    write()
-}
+    html.innerHTML = str2;
+    style.innerHTML = str.substring(0, n);
+    window.scroll(0, 99999);
+    html.scroll(0, 99999);
+    if (n >= str.length - 1) {
+      return;
+    } else {
+      setTimeout(() => {
+        write();
+      }, 20);
+    }
+    n++;
+  }
+  write();
+};
